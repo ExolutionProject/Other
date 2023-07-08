@@ -180,6 +180,8 @@ function Kavo.CreateLib(kavName, themeList)
             themeList.TextColor = Color3.fromRGB(255,255,255)
         elseif themeList.ElementColor == nil then
             themeList.ElementColor = Color3.fromRGB(32, 32, 38)
+        elseif themeList.IconColor == nil then
+            themeList.IconColor = Color3.fromRGB(255, 255, 255)
         end
     end
 
@@ -612,7 +614,7 @@ function Kavo.CreateLib(kavName, themeList)
                 viewInfo.Size = UDim2.new(0, 23, 0, 23)
                 viewInfo.ZIndex = 2
                 viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
+                viewInfo.ImageColor3 = themeList.IconColor
                 Objects[viewInfo] = "ImageColor3"
                 viewInfo.ImageRectOffset = Vector2.new(764, 764)
                 viewInfo.ImageRectSize = Vector2.new(36, 36)
@@ -622,7 +624,7 @@ function Kavo.CreateLib(kavName, themeList)
                 Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Sample.BackgroundTransparency = 1.000
                 Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
-                Sample.ImageColor3 = themeList.SchemeColor
+                Sample.ImageColor3 = themeList.IconColor
                 Objects[Sample] = "ImageColor3"
                 Sample.ImageTransparency = 0.600
 
@@ -655,7 +657,7 @@ function Kavo.CreateLib(kavName, themeList)
                 touch.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
                 touch.Size = UDim2.new(0, 21, 0, 21)
                 touch.Image = "rbxassetid://3926305904"
-                touch.ImageColor3 = themeList.SchemeColor
+                touch.ImageColor3 = themeList.IconColor
                 Objects[touch] = "SchemeColor"
                 touch.ImageRectOffset = Vector2.new(84, 204)
                 touch.ImageRectSize = Vector2.new(36, 36)
@@ -759,11 +761,11 @@ function Kavo.CreateLib(kavName, themeList)
                         if not hovering then
                             buttonElement.BackgroundColor3 = themeList.ElementColor
                         end
-                        viewInfo.ImageColor3 = themeList.SchemeColor
-                        Sample.ImageColor3 = themeList.SchemeColor
+                        viewInfo.ImageColor3 = themeList.IconColor
+                        Sample.ImageColor3 = themeList.IconColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         moreInfo.TextColor3 = themeList.TextColor
-                        touch.ImageColor3 = themeList.SchemeColor
+                        touch.ImageColor3 = themeList.IconColor
                         btnInfo.TextColor3 = themeList.TextColor
                     end
                 end)()
@@ -808,7 +810,7 @@ function Kavo.CreateLib(kavName, themeList)
                 viewInfo.Size = UDim2.new(0, 23, 0, 23)
                 viewInfo.ZIndex = 2
                 viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
+                viewInfo.ImageColor3 = themeList.IconColor
                 viewInfo.ImageRectOffset = Vector2.new(764, 764)
                 viewInfo.ImageRectSize = Vector2.new(36, 36)
 
@@ -820,7 +822,7 @@ function Kavo.CreateLib(kavName, themeList)
                 write.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
                 write.Size = UDim2.new(0, 21, 0, 21)
                 write.Image = "rbxassetid://3926305904"
-                write.ImageColor3 = themeList.SchemeColor
+                write.ImageColor3 = themeList.IconColor
                 write.ImageRectOffset = Vector2.new(324, 604)
                 write.ImageRectSize = Vector2.new(36, 36)
 
@@ -959,10 +961,10 @@ function Kavo.CreateLib(kavName, themeList)
                             textboxElement.BackgroundColor3 = themeList.ElementColor
                         end
                         TextBox.BackgroundColor3 = Color3.fromRGB(themeList.ElementColor.r * 255 - 6, themeList.ElementColor.g * 255 - 6, themeList.ElementColor.b * 255 - 7)
-                        viewInfo.ImageColor3 = themeList.SchemeColor
+                        viewInfo.ImageColor3 = themeList.IconColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         moreInfo.TextColor3 = themeList.TextColor
-                        write.ImageColor3 = themeList.SchemeColor
+                        write.ImageColor3 = themeList.IconColor
                         togName.TextColor3 = themeList.TextColor
                         TextBox.PlaceholderColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 19, themeList.SchemeColor.g * 255 - 26, themeList.SchemeColor.b * 255 - 35)
                         TextBox.TextColor3 = themeList.SchemeColor
@@ -1007,7 +1009,7 @@ function Kavo.CreateLib(kavName, themeList)
                     toggleDisabled.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
                     toggleDisabled.Size = UDim2.new(0, 21, 0, 21)
                     toggleDisabled.Image = "rbxassetid://3926309567"
-                    toggleDisabled.ImageColor3 = themeList.SchemeColor
+                    toggleDisabled.ImageColor3 = themeList.IconColor
                     toggleDisabled.ImageRectOffset = Vector2.new(628, 420)
                     toggleDisabled.ImageRectSize = Vector2.new(48, 48)
 
@@ -1018,7 +1020,7 @@ function Kavo.CreateLib(kavName, themeList)
                     toggleEnabled.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
                     toggleEnabled.Size = UDim2.new(0, 21, 0, 21)
                     toggleEnabled.Image = "rbxassetid://3926309567"
-                    toggleEnabled.ImageColor3 = themeList.SchemeColor
+                    toggleEnabled.ImageColor3 = themeList.IconColor
                     toggleEnabled.ImageRectOffset = Vector2.new(784, 420)
                     toggleEnabled.ImageRectSize = Vector2.new(48, 48)
                     toggleEnabled.ImageTransparency = 1.000
@@ -1044,7 +1046,7 @@ function Kavo.CreateLib(kavName, themeList)
                     viewInfo.Size = UDim2.new(0, 23, 0, 23)
                     viewInfo.ZIndex = 2
                     viewInfo.Image = "rbxassetid://3926305904"
-                    viewInfo.ImageColor3 = themeList.SchemeColor
+                    viewInfo.ImageColor3 = themeList.IconColor
                     viewInfo.ImageRectOffset = Vector2.new(764, 764)
                     viewInfo.ImageRectSize = Vector2.new(36, 36)
 
@@ -1053,7 +1055,7 @@ function Kavo.CreateLib(kavName, themeList)
                     Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Sample.BackgroundTransparency = 1.000
                     Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
-                    Sample.ImageColor3 = themeList.SchemeColor
+                    Sample.ImageColor3 = themeList.IconColor
                     Sample.ImageTransparency = 0.600
 
                     local moreInfo = Instance.new("TextLabel")
@@ -1168,11 +1170,11 @@ function Kavo.CreateLib(kavName, themeList)
                             if not hovering then
                                 toggleElement.BackgroundColor3 = themeList.ElementColor
                             end
-                            toggleDisabled.ImageColor3 = themeList.SchemeColor
-                            toggleEnabled.ImageColor3 = themeList.SchemeColor
+                            toggleDisabled.ImageColor3 = themeList.IconColor
+                            toggleEnabled.ImageColor3 = themeList.IconColor
                             togName.TextColor3 = themeList.TextColor
-                            viewInfo.ImageColor3 = themeList.SchemeColor
-                            Sample.ImageColor3 = themeList.SchemeColor
+                            viewInfo.ImageColor3 = themeList.IconColor
+                            Sample.ImageColor3 = themeList.IconColor
                             moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                             moreInfo.TextColor3 = themeList.TextColor
                         end
@@ -1274,7 +1276,7 @@ function Kavo.CreateLib(kavName, themeList)
                 viewInfo.Size = UDim2.new(0, 23, 0, 23)
                 viewInfo.ZIndex = 2
                 viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
+                viewInfo.ImageColor3 = themeList.IconColor
                 viewInfo.ImageRectOffset = Vector2.new(764, 764)
                 viewInfo.ImageRectSize = Vector2.new(36, 36)
 
@@ -1313,7 +1315,7 @@ function Kavo.CreateLib(kavName, themeList)
                 write.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
                 write.Size = UDim2.new(0, 21, 0, 21)
                 write.Image = "rbxassetid://3926307971"
-                write.ImageColor3 = themeList.SchemeColor
+                write.ImageColor3 = themeList.IconColor
                 write.ImageRectOffset = Vector2.new(404, 164)
                 write.ImageRectSize = Vector2.new(36, 36)
 
@@ -1391,9 +1393,9 @@ function Kavo.CreateLib(kavName, themeList)
                         moreInfo.TextColor3 = themeList.TextColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         val.TextColor3 = themeList.TextColor
-                        write.ImageColor3 = themeList.SchemeColor
+                        write.ImageColor3 = themeList.IconColor
                         togName.TextColor3 = themeList.TextColor
-                        viewInfo.ImageColor3 = themeList.SchemeColor
+                        viewInfo.ImageColor3 = themeList.IconColor
                         sliderBtn.BackgroundColor3 = Color3.fromRGB(themeList.ElementColor.r * 255 + 5, themeList.ElementColor.g * 255 + 5, themeList.ElementColor.b * 255  + 5)
                         sliderDrag.BackgroundColor3 = themeList.SchemeColor
                     end
@@ -1489,7 +1491,7 @@ function Kavo.CreateLib(kavName, themeList)
                 Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Sample.BackgroundTransparency = 1.000
                 Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
-                Sample.ImageColor3 = themeList.SchemeColor
+                Sample.ImageColor3 = themeList.IconColor
                 Sample.ImageTransparency = 0.600
                 
                 dropFrame.Name = "dropFrame"
@@ -1575,7 +1577,7 @@ function Kavo.CreateLib(kavName, themeList)
                 listImg.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
                 listImg.Size = UDim2.new(0, 21, 0, 21)
                 listImg.Image = "rbxassetid://3926305904"
-                listImg.ImageColor3 = themeList.SchemeColor
+                listImg.ImageColor3 = themeList.IconColor
                 listImg.ImageRectOffset = Vector2.new(644, 364)
                 listImg.ImageRectSize = Vector2.new(36, 36)
 
@@ -1600,7 +1602,7 @@ function Kavo.CreateLib(kavName, themeList)
                 viewInfo.Size = UDim2.new(0, 23, 0, 23)
                 viewInfo.ZIndex = 2
                 viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
+                viewInfo.ImageColor3 = themeList.IconColor
                 viewInfo.ImageRectOffset = Vector2.new(764, 764)
                 viewInfo.ImageRectSize = Vector2.new(36, 36)
 
@@ -1614,7 +1616,7 @@ function Kavo.CreateLib(kavName, themeList)
                 Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Sample.BackgroundTransparency = 1.000
                 Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
-                Sample.ImageColor3 = themeList.SchemeColor
+                Sample.ImageColor3 = themeList.IconColor
                 Sample.ImageTransparency = 0.600
 
                 UIListLayout.Parent = dropFrame
@@ -1666,11 +1668,11 @@ function Kavo.CreateLib(kavName, themeList)
                         if not hovering then
                             dropOpen.BackgroundColor3 = themeList.ElementColor
                         end
-                        Sample.ImageColor3 = themeList.SchemeColor
+                        Sample.ImageColor3 = themeList.IconColor
                         dropFrame.BackgroundColor3 = themeList.Background
-                        listImg.ImageColor3 = themeList.SchemeColor
+                        listImg.ImageColor3 = themeList.IconColor
                         itemTextbox.TextColor3 = themeList.TextColor
-                        viewInfo.ImageColor3 = themeList.SchemeColor
+                        viewInfo.ImageColor3 = themeList.IconColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         moreInfo.TextColor3 = themeList.TextColor
                     end
@@ -1717,7 +1719,7 @@ function Kavo.CreateLib(kavName, themeList)
                     Sample1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Sample1.BackgroundTransparency = 1.000
                     Sample1.Image = "http://www.roblox.com/asset/?id=4560909609"
-                    Sample1.ImageColor3 = themeList.SchemeColor
+                    Sample1.ImageColor3 = themeList.IconColor
                     Sample1.ImageTransparency = 0.600
 
                     local sample1 = Sample1
@@ -1794,7 +1796,7 @@ function Kavo.CreateLib(kavName, themeList)
                                 optionSelect.BackgroundColor3 = themeList.ElementColor
                             end
                             optionSelect.TextColor3 = Color3.fromRGB(themeList.TextColor.r * 255 - 6, themeList.TextColor.g * 255 - 6, themeList.TextColor.b * 255 - 6)
-                            Sample1.ImageColor3 = themeList.SchemeColor
+                            Sample1.ImageColor3 = themeList.IconColor
                         end
                     end)()
                 end
@@ -1816,7 +1818,7 @@ function Kavo.CreateLib(kavName, themeList)
                         Sample11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Sample11.BackgroundTransparency = 1.000
                         Sample11.Image = "http://www.roblox.com/asset/?id=4560909609"
-                        Sample11.ImageColor3 = themeList.SchemeColor
+                        Sample11.ImageColor3 = themeList.IconColor
                         Sample11.ImageTransparency = 0.600
     
                         local sample11 = Sample11
@@ -1893,7 +1895,7 @@ function Kavo.CreateLib(kavName, themeList)
                                     optionSelect.BackgroundColor3 = themeList.ElementColor
                                 end
                                 optionSelect.TextColor3 = Color3.fromRGB(themeList.TextColor.r * 255 - 6, themeList.TextColor.g * 255 - 6, themeList.TextColor.b * 255 - 6)
-                                Sample11.ImageColor3 = themeList.SchemeColor
+                                Sample11.ImageColor3 = themeList.IconColor
                             end
                         end)()
                     end
@@ -2001,7 +2003,7 @@ function Kavo.CreateLib(kavName, themeList)
                 Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Sample.BackgroundTransparency = 1.000
                 Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
-                Sample.ImageColor3 = themeList.SchemeColor
+                Sample.ImageColor3 = themeList.IconColor
                 Sample.ImageTransparency = 0.600
 
                 
@@ -2026,7 +2028,7 @@ function Kavo.CreateLib(kavName, themeList)
                 viewInfo.Size = UDim2.new(0, 23, 0, 23)
                 viewInfo.ZIndex = 2
                 viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
+                viewInfo.ImageColor3 = themeList.IconColor
                 viewInfo.ImageRectOffset = Vector2.new(764, 764)
                 viewInfo.ImageRectSize = Vector2.new(36, 36)
                 viewInfo.MouseButton1Click:Connect(function()
@@ -2090,7 +2092,7 @@ function Kavo.CreateLib(kavName, themeList)
                 touch.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
                 touch.Size = UDim2.new(0, 21, 0, 21)
                 touch.Image = "rbxassetid://3926305904"
-                touch.ImageColor3 = themeList.SchemeColor
+                touch.ImageColor3 = themeList.IconColor
                 touch.ImageRectOffset = Vector2.new(364, 284)
                 touch.ImageRectSize = Vector2.new(36, 36)
 
@@ -2112,11 +2114,11 @@ function Kavo.CreateLib(kavName, themeList)
                             keybindElement.BackgroundColor3 = themeList.ElementColor
                         end
                         togName_2.TextColor3 = themeList.SchemeColor
-                        touch.ImageColor3 = themeList.SchemeColor
-                        viewInfo.ImageColor3 = themeList.SchemeColor
+                        touch.ImageColor3 = themeList.IconColor
+                        viewInfo.ImageColor3 = themeList.IconColor
                         togName.BackgroundColor3 = themeList.TextColor
                         togName.TextColor3 = themeList.TextColor
-                        Sample.ImageColor3 = themeList.SchemeColor
+                        Sample.ImageColor3 = themeList.IconColor
                         moreInfo.TextColor3 = themeList.TextColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
 
@@ -2161,7 +2163,7 @@ function Kavo.CreateLib(kavName, themeList)
                 Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Sample.BackgroundTransparency = 1.000
                 Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
-                Sample.ImageColor3 = themeList.SchemeColor
+                Sample.ImageColor3 = themeList.IconColor
                 Sample.ImageTransparency = 0.600
 
                 local btn = colorHeader
@@ -2254,7 +2256,7 @@ function Kavo.CreateLib(kavName, themeList)
                 touch.Position = UDim2.new(0.0199999996, 0, 0.180000007, 0)
                 touch.Size = UDim2.new(0, 21, 0, 21)
                 touch.Image = "rbxassetid://3926305904"
-                touch.ImageColor3 = themeList.SchemeColor
+                touch.ImageColor3 = themeList.IconColor
                 touch.ImageRectOffset = Vector2.new(44, 964)
                 touch.ImageRectSize = Vector2.new(36, 36)
 
@@ -2298,7 +2300,7 @@ function Kavo.CreateLib(kavName, themeList)
                 viewInfo.Size = UDim2.new(0, 23, 0, 23)
                 viewInfo.ZIndex = 2
                 viewInfo.Image = "rbxassetid://3926305904"
-                viewInfo.ImageColor3 = themeList.SchemeColor
+                viewInfo.ImageColor3 = themeList.IconColor
                 viewInfo.ImageRectOffset = Vector2.new(764, 764)
                 viewInfo.ImageRectSize = Vector2.new(36, 36)
                 viewInfo.MouseButton1Click:Connect(function()
@@ -2394,7 +2396,7 @@ function Kavo.CreateLib(kavName, themeList)
                 toggleDisabled.Position = UDim2.new(0.704659104, 0, 0.0657142699, 0)
                 toggleDisabled.Size = UDim2.new(0, 21, 0, 21)
                 toggleDisabled.Image = "rbxassetid://3926309567"
-                toggleDisabled.ImageColor3 = themeList.SchemeColor
+                toggleDisabled.ImageColor3 = themeList.IconColor
                 toggleDisabled.ImageRectOffset = Vector2.new(628, 420)
                 toggleDisabled.ImageRectSize = Vector2.new(48, 48)
 
@@ -2405,7 +2407,7 @@ function Kavo.CreateLib(kavName, themeList)
                 toggleEnabled.Position = UDim2.new(0.704999983, 0, 0.0659999996, 0)
                 toggleEnabled.Size = UDim2.new(0, 21, 0, 21)
                 toggleEnabled.Image = "rbxassetid://3926309567"
-                toggleEnabled.ImageColor3 = themeList.SchemeColor
+                toggleEnabled.ImageColor3 = themeList.IconColor
                 toggleEnabled.ImageRectOffset = Vector2.new(784, 420)
                 toggleEnabled.ImageRectSize = Vector2.new(48, 48)
                 toggleEnabled.ImageTransparency = 1.000
@@ -2469,17 +2471,17 @@ function Kavo.CreateLib(kavName, themeList)
                         if not hovering then
                             colorElement.BackgroundColor3 = themeList.ElementColor
                         end
-                        touch.ImageColor3 = themeList.SchemeColor
+                        touch.ImageColor3 = themeList.IconColor
                         colorHeader.BackgroundColor3 = themeList.ElementColor
                         togName.TextColor3 = themeList.TextColor
                         moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
                         moreInfo.TextColor3 = themeList.TextColor
-                        viewInfo.ImageColor3 = themeList.SchemeColor
+                        viewInfo.ImageColor3 = themeList.IconColor
                         colorInners.BackgroundColor3 = themeList.ElementColor
-                        toggleDisabled.ImageColor3 = themeList.SchemeColor
-                        toggleEnabled.ImageColor3 = themeList.SchemeColor
+                        toggleDisabled.ImageColor3 = themeList.IconColor
+                        toggleEnabled.ImageColor3 = themeList.IconColor
                         togName_2.TextColor3 = themeList.TextColor
-                        Sample.ImageColor3 = themeList.SchemeColor
+                        Sample.ImageColor3 = themeList.IconColor
                     end
                 end)()
                 updateSectionFrame()
