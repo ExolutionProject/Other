@@ -633,7 +633,7 @@ function Kavo.CreateLib(kavName, themeList)
 
                 moreInfo.Name = "TipMore"
                 moreInfo.Parent = infoContainer
-                moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                moreInfo.BackgroundColor3 = themeList.SchemeColor
                 moreInfo.Position = UDim2.new(0, 0, 2, 0)
                 moreInfo.Size = UDim2.new(0, 353, 0, 33)
                 moreInfo.ZIndex = 9
@@ -763,7 +763,7 @@ function Kavo.CreateLib(kavName, themeList)
                         end
                         viewInfo.ImageColor3 = themeList.IconColor
                         Sample.ImageColor3 = themeList.IconColor
-                        moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                        moreInfo.BackgroundColor3 = themeList.SchemeColor
                         moreInfo.TextColor3 = themeList.TextColor
                         touch.ImageColor3 = themeList.IconColor
                         btnInfo.TextColor3 = themeList.TextColor
@@ -862,7 +862,7 @@ function Kavo.CreateLib(kavName, themeList)
 
                 moreInfo.Name = "TipMore"
                 moreInfo.Parent = infoContainer
-                moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                moreInfo.BackgroundColor3 = themeList.SchemeColor
                 moreInfo.Position = UDim2.new(0, 0, 2, 0)
                 moreInfo.Size = UDim2.new(0, 353, 0, 33)
                 moreInfo.ZIndex = 9
@@ -960,13 +960,13 @@ function Kavo.CreateLib(kavName, themeList)
                         if not hovering then
                             textboxElement.BackgroundColor3 = themeList.ElementColor
                         end
-                        TextBox.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                        TextBox.BackgroundColor3 = Color3.fromRGB(themeList.ElementColor.r * 255 - 6, themeList.ElementColor.g * 255 - 6, themeList.ElementColor.b * 255 - 7)
                         viewInfo.ImageColor3 = themeList.IconColor
-                        moreInfo.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                        moreInfo.BackgroundColor3 = themeList.SchemeColor
                         moreInfo.TextColor3 = themeList.TextColor
                         write.ImageColor3 = themeList.IconColor
                         togName.TextColor3 = themeList.TextColor
-                        TextBox.PlaceholderColor3 = Color3.fromRGB(255,0,0)
+                        TextBox.PlaceholderColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 19, themeList.SchemeColor.g * 255 - 26, themeList.SchemeColor.b * 255 - 35)
                         TextBox.TextColor3 = themeList.SchemeColor
                     end
                 end)()
@@ -1063,7 +1063,7 @@ function Kavo.CreateLib(kavName, themeList)
     
                     moreInfo.Name = "TipMore"
                     moreInfo.Parent = infoContainer
-                    moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                    moreInfo.BackgroundColor3 = themeList.SchemeColor
                     moreInfo.Position = UDim2.new(0, 0, 2, 0)
                     moreInfo.Size = UDim2.new(0, 353, 0, 33)
                     moreInfo.ZIndex = 9
@@ -1175,7 +1175,7 @@ function Kavo.CreateLib(kavName, themeList)
                             togName.TextColor3 = themeList.TextColor
                             viewInfo.ImageColor3 = themeList.IconColor
                             Sample.ImageColor3 = themeList.IconColor
-                            moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                            moreInfo.BackgroundColor3 = themeList.SchemeColor
                             moreInfo.TextColor3 = themeList.TextColor
                         end
                     end)()
@@ -1337,7 +1337,7 @@ function Kavo.CreateLib(kavName, themeList)
 
                 moreInfo.Name = "TipMore"
                 moreInfo.Parent = infoContainer
-                moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                moreInfo.BackgroundColor3 = themeList.SchemeColor
                 moreInfo.Position = UDim2.new(0, 0, 2, 0)
                 moreInfo.Size = UDim2.new(0, 353, 0, 33)
                 moreInfo.ZIndex = 9
@@ -1391,7 +1391,7 @@ function Kavo.CreateLib(kavName, themeList)
                             sliderElement.BackgroundColor3 = themeList.ElementColor
                         end
                         moreInfo.TextColor3 = themeList.TextColor
-                        moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                        moreInfo.BackgroundColor3 = themeList.SchemeColor
                         val.TextColor3 = themeList.TextColor
                         write.ImageColor3 = themeList.IconColor
                         togName.TextColor3 = themeList.TextColor
@@ -1635,7 +1635,7 @@ function Kavo.CreateLib(kavName, themeList)
 
                 moreInfo.Name = "TipMore"
                 moreInfo.Parent = infoContainer
-                moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                moreInfo.BackgroundColor3 = themeList.SchemeColor
                 moreInfo.Position = UDim2.new(0, 0, 2, 0)
                 moreInfo.Size = UDim2.new(0, 353, 0, 33)
                 moreInfo.ZIndex = 9
@@ -1673,7 +1673,7 @@ function Kavo.CreateLib(kavName, themeList)
                         listImg.ImageColor3 = themeList.IconColor
                         itemTextbox.TextColor3 = themeList.TextColor
                         viewInfo.ImageColor3 = themeList.IconColor
-                        moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                        moreInfo.BackgroundColor3 = themeList.SchemeColor
                         moreInfo.TextColor3 = themeList.TextColor
                     end
                 end)()
@@ -1987,7 +1987,7 @@ function Kavo.CreateLib(kavName, themeList)
 
                 moreInfo.Name = "TipMore"
                 moreInfo.Parent = infoContainer
-                moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                moreInfo.BackgroundColor3 = themeList.SchemeColor
                 moreInfo.Position = UDim2.new(0, 0, 2, 0)
                 moreInfo.Size = UDim2.new(0, 353, 0, 33)
                 moreInfo.ZIndex = 9
@@ -2120,7 +2120,7 @@ function Kavo.CreateLib(kavName, themeList)
                         togName.TextColor3 = themeList.TextColor
                         Sample.ImageColor3 = themeList.IconColor
                         moreInfo.TextColor3 = themeList.TextColor
-                        moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                        moreInfo.BackgroundColor3 = themeList.SchemeColor
 
                     end
                 end)()
@@ -2278,7 +2278,7 @@ function Kavo.CreateLib(kavName, themeList)
 
                 moreInfo.Name = "TipMore"
                 moreInfo.Parent = infoContainer
-                moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                moreInfo.BackgroundColor3 = themeList.SchemeColor
                 moreInfo.Position = UDim2.new(0, 0, 2, 0)
                 moreInfo.Size = UDim2.new(0, 353, 0, 33)
                 moreInfo.ZIndex = 9
@@ -2474,7 +2474,7 @@ function Kavo.CreateLib(kavName, themeList)
                         touch.ImageColor3 = themeList.IconColor
                         colorHeader.BackgroundColor3 = themeList.ElementColor
                         togName.TextColor3 = themeList.TextColor
-                        moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                        moreInfo.BackgroundColor3 = themeList.SchemeColor
                         moreInfo.TextColor3 = themeList.TextColor
                         viewInfo.ImageColor3 = themeList.IconColor
                         colorInners.BackgroundColor3 = themeList.ElementColor
