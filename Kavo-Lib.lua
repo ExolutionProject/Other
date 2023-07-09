@@ -336,7 +336,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     infoContainer.Name = "infoContainer"
     infoContainer.Parent = Main
-    infoContainer.BackgroundColor3 = themeList.SchemeColor
+    infoContainer.BackgroundColor3 = Color3.fromRGB(255,0,0)
     infoContainer.BackgroundTransparency = 1.000
     infoContainer.BorderColor3 = Color3.fromRGB(27, 42, 53)
     infoContainer.ClipsDescendants = true
