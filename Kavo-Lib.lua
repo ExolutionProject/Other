@@ -325,7 +325,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     pages.Name = "pages"
     pages.Parent = Main
-    pages.BackgroundColor3 = Color3.fromRGB(255,255,0)
+    pages.BackgroundColor3 = Color3.fromRGB(255,255,255)
     pages.BackgroundTransparency = 1.000
     pages.BorderSizePixel = 0
     pages.Position = UDim2.new(0.299047589, 0, 0.122641519, 0)
@@ -336,7 +336,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     infoContainer.Name = "infoContainer"
     infoContainer.Parent = Main
-    infoContainer.BackgroundColor3 = Color3.fromRGB(255,0,0)
+    infoContainer.BackgroundColor3 = Color3.fromRGB(255,255,255)
     infoContainer.BackgroundTransparency = 1.000
     infoContainer.BorderColor3 = Color3.fromRGB(27, 42, 53)
     infoContainer.ClipsDescendants = true
@@ -960,13 +960,13 @@ function Kavo.CreateLib(kavName, themeList)
                         if not hovering then
                             textboxElement.BackgroundColor3 = themeList.ElementColor
                         end
-                        TextBox.BackgroundColor3 = Color3.fromRGB(themeList.ElementColor.r * 255 - 6, themeList.ElementColor.g * 255 - 6, themeList.ElementColor.b * 255 - 7)
+                        TextBox.BackgroundColor3 = Color3.fromRGB(255,0,0)
                         viewInfo.ImageColor3 = themeList.IconColor
-                        moreInfo.BackgroundColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 14, themeList.SchemeColor.g * 255 - 17, themeList.SchemeColor.b * 255 - 13)
+                        moreInfo.BackgroundColor3 = Color3.fromRGB(255,0,0)
                         moreInfo.TextColor3 = themeList.TextColor
                         write.ImageColor3 = themeList.IconColor
                         togName.TextColor3 = themeList.TextColor
-                        TextBox.PlaceholderColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 19, themeList.SchemeColor.g * 255 - 26, themeList.SchemeColor.b * 255 - 35)
+                        TextBox.PlaceholderColor3 = Color3.fromRGB(255,0,0)
                         TextBox.TextColor3 = themeList.SchemeColor
                     end
                 end)()
