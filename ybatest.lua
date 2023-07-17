@@ -541,6 +541,22 @@ spawn(function()
     end
 end)
 
+local Hook = nil
+Hook = hookfunction(getrawmetatable(game).__namecall, function(self,...)
+    local args = {...}
+
+    if args[1] and args[1] == "VampireBurn" and AntiVampBurn == true then
+        return
+    end
+    if tostring(self) == "Returner" then
+        if args[1] and args[1] == "idklolbrah2de" then
+            return "  ___XP DE KEY"
+        end
+    end
+
+    return Hook(self,...) 
+end)
+--[[
 spawn(function()
     if getrawmetatable and setreadonly and getnamecallmethod then 
         local mt = getrawmetatable(game)
@@ -563,3 +579,4 @@ spawn(function()
         print("Box Utilites, AntiVampBurn, TpBypass turned off due worst exploit api, if it doesnt true, dm me MorphixScripts#5269")
     end
 end)
+]]
