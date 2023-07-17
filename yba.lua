@@ -1,3 +1,4 @@
+--1
 local Poss = {
     Vector3.new(33.27824020385742,-28.267070770263672,528.2354125976562),
     Vector3.new(607.3307495117188,4.0721435546875,-69.88491821289062),
@@ -541,13 +542,14 @@ spawn(function()
     end
 end)
 
-local Hook = getrawmetatable(game).__namecall
+local Hook = nil
 Hook = hookfunction(getrawmetatable(game).__namecall, function(self,...)
     local args = {...}
 
     if args[1] and args[1] == "VampireBurn" and AntiVampBurn == true then
         return
     end
+
     if tostring(self) == "Returner" then
         if args[1] and args[1] == "idklolbrah2de" then
             return "  ___XP DE KEY"
